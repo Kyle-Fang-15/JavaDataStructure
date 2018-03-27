@@ -52,6 +52,7 @@ public class DList {
      */
     public DList() {
         this.head=new DListNode(null,null,null);
+        this.head.prev=this.head.next=this.head;
         //this.head.next=this.head;
         //this.head.prev=null;
         this.size=0;
@@ -84,19 +85,10 @@ public class DList {
      *  Performance:  runs in O(1) time.
      */
     public void insertFront(Object item) {
-       if (size==0){
-           DListNode newNode=new DListNode(item, null, null);
-           newNode.prev=newNode;
-           newNode.next=newNode;
-           this.head.next=newNode;
-           size++;
-
-       }else {
-           DListNode newNode = new DListNode(item, this.head.next.prev, this.head.next);
-           this.head.next.prev.next = newNode;
-           this.head.next.prev = newNode;
-           size++;
-       }
+  DListNode theNode=newNode(item,head,head.next);
+  head.next=theNode;
+  theNode.next.prev=theNode;
+  size++;
         // Your solution here.
     }
 
@@ -106,19 +98,11 @@ public class DList {
      *  Performance:  runs in O(1) time.
      */
     public void insertBack(Object item) {
-        if (size==0){
-            DListNode newNode=new DListNode(item, null, null);
-            newNode.prev=newNode;
-            newNode.next=newNode;
-            this.head.next=newNode;
-            size++;
+        DListNode theNode=newNode(item,head.prev,head);
+        head.prev=theNode;
+        theNode.prev.next=theNode;
+        size++;
 
-        }else {
-            DListNode newNode = new DListNode(item, this.head.next, this.head.next.prev);
-            this.head.next.prev.next = newNode;
-            this.head.next.prev = newNode ;
-            size++;
-        }
 
         // Your solution here.
     }
@@ -153,7 +137,7 @@ public class DList {
         if (size==0){
             return null;
         }
-        return head.next.prev;
+        return head.prev;
         // Your solution here.
     }
 
@@ -169,7 +153,7 @@ public class DList {
      */
     public DListNode next(DListNode node) {
 
-        if (node==null || node.next==head.next){
+        if (node==null || node.next==head){
             return null;
         }else{
             return node.next;
@@ -208,9 +192,9 @@ public class DList {
         if (node==null){
             return;
         }else{
-            DListNode newNode=new DListNode(item, node, node.next);
-            node.next=newNode;
-            node.next.prev=newNode;
+            DListNode theNode=newNode(item, node, node.next);
+            node.next=theNode;
+            theNode.next.prev=theNode;
             size++;
         }
         // Your solution here.
@@ -227,9 +211,9 @@ public class DList {
         if (node==null){
             return;
         }else{
-            DListNode newNode=new DListNode(item,node.prev,node);
-            node.prev.next=newNode;
-            node.prev=newNode;
+            DListNode theNode=newNode(item,node.prev, node);
+         node.prev=theNode;
+         theNode.prev.next=theNode;
             size++;
         }
         // Your solution here.
