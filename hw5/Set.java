@@ -248,35 +248,10 @@ try{
   }
 
   public static void main(String[] argv) throws InvalidNodeException {
-  Set s = new Set();
-    s.insert(new Integer(3));
-    s.insert(new Integer(4));
-    //s.insert(new Integer(4));
-   // s.insert(new Integer(6));
-    System.out.println("Set s = " + s);
 
-    Set s2 = new Set();
-    s2.insert(new Integer(4));
-    s2.insert(new Integer(5));
-    //s2.insert(new Integer(5));
-    System.out.println("Set s2 = " + s2);
-
-    Set s3 = new Set();
-    s3.insert(new Integer(4));
-    s3.insert(new Integer(5));
-    s3.insert(new Integer(8));
-    System.out.println("Set s3 = " + s3);
-
-    s.union(s2);
-    System.out.println("After s.union(s2), s = " + s);
-
-    s.intersect(s3);
-    System.out.println("After s.intersect(s3), s = " + s);
-
-    System.out.println("s.cardinality() = " + s.cardinality());
 
     // You may want to add more (ungraded) test code here.
-/*
+
     System.out.println("Testing insert()");
     Set s = new Set();
     s.insert(new Integer(3));
@@ -342,22 +317,6 @@ try{
     System.out.println("s5.cardinality() should be 0: " + s5.cardinality());
     System.out.println("s6.cardinality() should be 4: " + s6.cardinality());
     System.out.println("s7.cardinality() should be 2: " + s7.cardinality());
-*/
-    Set s4 = new Set();
-    System.out.println("Empty Set s4 = " + s4);
 
-    System.out.println("s4.cardinality() = " + s4.cardinality());
-
-    s4.union(s4);
-    System.out.println("After s4.union(s4), s4 = " + s4);
-
-    s4.intersect(s4);
-    System.out.println("After s4.intersect(s4), s4 = " + s4);
-
-    s3.union(s4);
-    System.out.println("After s3.union(s4), s3 = " + s3);
-
-    s3.intersect(s4);
-    System.out.println("After s3.intersect(s4), s3 = " + s3);
   }
 }
