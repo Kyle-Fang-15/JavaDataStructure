@@ -63,6 +63,10 @@ public class SimpleBoard {
    */
 
   public boolean equals(Object board) {
+    if (board instanceof SimpleBoard){
+      return this.hashCode()==board.hashCode();
+    }
+
     // Replace the following line with your solution.  Be sure to return false
     //   (rather than throwing a ClassCastException) if "board" is not
     //   a SimpleBoard.
@@ -76,7 +80,14 @@ public class SimpleBoard {
 
   public int hashCode() {
     // Replace the following line with your solution.
-    return 99;
+    int hashCode=0;
+    for (int i=0; i<DIMENSION; i++){
+      for (int j=0; j<DIMENSION; j++){
+        int order=DIMENSION*i+j;
+        hashCode+=(int) grid[i][j]*(Math.pow(3,order));
+      }
+    }
+    return hashCode;
   }
 
 }
