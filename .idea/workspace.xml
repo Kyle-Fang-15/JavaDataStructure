@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7cc668f-136e-443e-84a5-ca806cae1d3f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/hw6/SimpleBoard.java" afterPath="$PROJECT_DIR$/hw6/SimpleBoard.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hw6/dict/SList.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/hw6/Homework6Test.java" afterPath="$PROJECT_DIR$/hw6/Homework6Test.java" />
+      <change beforePath="$PROJECT_DIR$/hw6/dict/HashTableChained.java" afterPath="$PROJECT_DIR$/hw6/dict/HashTableChained.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/Homework6Test.class" afterPath="$PROJECT_DIR$/out/production/CS61B homework/Homework6Test.class" />
       <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/Set.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/dict/HashTableChained.class" afterPath="$PROJECT_DIR$/out/production/CS61B homework/dict/HashTableChained.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/.idea/description.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/.idea/encodings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/DList.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/DListNode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/InvalidNodeException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/List.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/ListNode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/SList.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/SListNode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/list/list.iml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +41,76 @@
       <file leaf-file-name="HashTableChained.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw6/dict/HashTableChained.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="153" column="64" lean-forward="false" selection-start-line="153" selection-start-column="64" selection-end-line="153" selection-end-column="64" />
+            <state relative-caret-position="302">
+              <caret line="218" column="39" lean-forward="true" selection-start-line="218" selection-start-column="39" selection-end-line="218" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3756#3763#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw6/dict/Entry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="192" column="3" lean-forward="true" selection-start-line="184" selection-start-column="1" selection-end-line="192" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="266" column="26" lean-forward="false" selection-start-line="266" selection-start-column="26" selection-end-line="266" selection-end-column="26" />
+              <folding>
+                <element signature="e#6326#6327#0" expanded="true" />
+                <element signature="e#6394#6395#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/LinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5804">
+              <caret line="109" column="11" lean-forward="false" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dictionary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw6/dict/Dictionary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw6/dict/SList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+              <folding>
+                <element signature="e#471#472#0" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,7 +119,7 @@
       <file leaf-file-name="SimpleBoard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw6/SimpleBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
+            <state relative-caret-position="328">
               <caret line="66" column="47" lean-forward="false" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
               <folding />
             </state>
@@ -44,8 +129,8 @@
       <file leaf-file-name="Homework6Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hw6/Homework6Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-516">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="357">
+              <caret line="51" column="19" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -63,6 +148,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>peek</find>
+      <find>getcapacity</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,8 +176,10 @@
         <option value="$PROJECT_DIR$/hw5/list/DListNode.java" />
         <option value="$PROJECT_DIR$/hw5/list/DList.java" />
         <option value="$PROJECT_DIR$/hw5/Set.java" />
-        <option value="$PROJECT_DIR$/hw6/dict/HashTableChained.java" />
         <option value="$PROJECT_DIR$/hw6/SimpleBoard.java" />
+        <option value="$PROJECT_DIR$/hw6/dict/SList.java" />
+        <option value="$PROJECT_DIR$/hw6/dict/HashTableChained.java" />
+        <option value="$PROJECT_DIR$/hw6/Homework6Test.java" />
       </list>
     </option>
   </component>
@@ -132,6 +220,17 @@
             <path>
               <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaDataStructure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaDataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="hw5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaDataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="hw5" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
@@ -235,12 +334,12 @@
       <workItem from="1522131707065" duration="2347000" />
       <workItem from="1522204307251" duration="20087000" />
       <workItem from="1522289533253" duration="11109000" />
-      <workItem from="1522374501962" duration="10582000" />
+      <workItem from="1522374501962" duration="19226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61966000" />
+    <option name="totallyTimeSpent" value="70610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="70" width="1297" height="747" extended-state="0" />
@@ -287,13 +386,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/DListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TestDList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1875">
@@ -490,16 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1065">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#5518#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DListNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -528,14 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="49" column="11" lean-forward="false" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hw6/dict/Dictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -598,8 +672,8 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="165" column="11" lean-forward="false" selection-start-line="165" selection-start-column="11" selection-end-line="165" selection-end-column="11" />
+        <state relative-caret-position="129">
+          <caret line="266" column="26" lean-forward="false" selection-start-line="266" selection-start-column="26" selection-end-line="266" selection-end-column="26" />
           <folding>
             <element signature="e#6326#6327#0" expanded="true" />
             <element signature="e#6394#6395#0" expanded="true" />
@@ -607,14 +681,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hw6/dict/HashTableChained.java">
+    <entry file="file://$PROJECT_DIR$/src/DList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="153" column="64" lean-forward="false" selection-start-line="153" selection-start-column="64" selection-end-line="153" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3756#3763#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="297">
+          <caret line="192" column="3" lean-forward="true" selection-start-line="184" selection-start-column="1" selection-end-line="192" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5804">
+          <caret line="109" column="11" lean-forward="false" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -626,26 +705,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hw6/SimpleBoard.java">
+    <entry file="file://$PROJECT_DIR$/hw6/dict/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="66" column="47" lean-forward="false" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+        <state relative-caret-position="150">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/hw6/dict/SList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6152">
-          <caret line="653" column="17" lean-forward="false" selection-start-line="653" selection-start-column="13" selection-end-line="653" selection-end-column="17" />
+        <state relative-caret-position="334">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw6/dict/HashTableChained.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="218" column="39" lean-forward="true" selection-start-line="218" selection-start-column="39" selection-end-line="218" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw6/SimpleBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="66" column="47" lean-forward="false" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hw6/Homework6Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-516">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="357">
+          <caret line="51" column="19" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
           <folding />
         </state>
       </provider>

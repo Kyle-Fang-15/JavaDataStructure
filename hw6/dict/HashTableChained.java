@@ -19,9 +19,9 @@ import java.util.LinkedList;
 
 public class HashTableChained implements Dictionary {
 
-   private ArrayList<LinkedList> hashArray;
-   private int size;//number of key-value pairs;
-  /**
+   private SList[] hashArray;
+   public int size=0;//number of key-value pairs;
+  /*
    *  Place any data fields here.
    **/
 
@@ -36,8 +36,8 @@ public class HashTableChained implements Dictionary {
   //a method to generate a prime number that is at least sizeEstimate;
   public int primeGenator(int sizeEstimate){
     if (sizeEstimate<7) return 7;
+    int i=sizeEstimate;
     while (true){
-      int i=sizeEstimate;
       int j=0;
       for (j=2; j<i/2+1; j++){
         if (i%j==0)
@@ -51,7 +51,7 @@ public class HashTableChained implements Dictionary {
   public HashTableChained(int sizeEstimate) {
     int primeNum=primeGenator(sizeEstimate);
 
-    this.hashArray=new ArrayList<LinkedList>(primeNum);
+    this.hashArray=new SList[primeNum];
     // Your solution here.
   }
 
@@ -61,7 +61,7 @@ public class HashTableChained implements Dictionary {
    **/
 
   public HashTableChained() {
-    this.hashArray=new ArrayList<LinkedList>(101);
+    this.hashArray=new SList[101];
     // Your solution here.
   }
 
@@ -74,10 +74,10 @@ public class HashTableChained implements Dictionary {
    **/
 
   int compFunction(int code) {
-    int arrayListSize=this.hashArray.size();
+    int arrayListSize=this.hashArray.length;
 
     // Replace the following line with your solution.
-    return Math.abs(code)/arrayListSize;
+    return Math.abs(code) % arrayListSize;
     //return (arrayListSize*(code-Integer.MIN_VALUE))/(Integer.MAX_VALUE-Integer.MIN_VALUE+1);
   }
 
@@ -122,12 +122,12 @@ public class HashTableChained implements Dictionary {
     newEntry.key=key;
     newEntry.value=value;
     int hash=compFunction(key.hashCode());
-    if (hashArray.get(hash)==null){
-    LinkedList<Entry> newList= new LinkedList<Entry>();
-    newList.addFirst(newEntry);
+    if (hashArray[hash]==null){
+    hashArray[hash]=new SList();
+    hashArray[hash].addFirst(newEntry);
     size++;
     }else{
-      hashArray.get(hash).addFirst(newEntry);
+      hashArray[hash].addFirst(newEntry);
       size++;
     }
     // Replace the following line with your solution.
@@ -148,11 +148,14 @@ public class HashTableChained implements Dictionary {
 
   public Entry find(Object key) {
     int hash=compFunction(key.hashCode());
-    if(hashArray.get(hash)==null)
+    if(hashArray[hash]==null)
       return null;
-    for (int i=0; i<hashArray.get(hash).size();i++){
-        if (((Entry) hashArray.get(hash).get(i)).key.equals(key))
-          return (Entry) hashArray.get(hash).get(i);
+    SList.SNode currentNode=hashArray[hash].head.next;
+    while(currentNode!=null){
+      if (((Entry) currentNode.item).key().equals(key)){
+        return (Entry) currentNode.item;
+      }
+      currentNode=currentNode.next;
     }
     // Replace the following line with your solution.
     return null;
@@ -174,16 +177,19 @@ public class HashTableChained implements Dictionary {
   public Entry remove(Object key) {
     // Replace the following line with your solution.
     int hash=compFunction(key.hashCode());
-    if(hashArray.get(hash)==null)
+    if(hashArray[hash]==null)
       return null;
-    Entry temp=null;
-    for (int i=0; i<hashArray.get(hash).size();i++){
-      if (((Entry) hashArray.get(hash).get(i)).key.equals(key))
-         temp = (Entry) hashArray.get(hash).get(i);
-            hashArray.get(hash).remove(i);
-      size--;
-      return temp;
+    SList.SNode currentNode=hashArray[hash].head.next;
+    while(currentNode!=null){
+      if (((Entry) currentNode.item).key().equals(key)){
+        Entry newEntry=(Entry) currentNode.item;
+        hashArray[hash].deleteFirst();
+        size--;
+        return (Entry) newEntry;
+      }
+      currentNode=currentNode.next;
     }
+
     // Replace the following line with your solution.
     return null;
   }
@@ -193,10 +199,31 @@ public class HashTableChained implements Dictionary {
    */
   public void makeEmpty() {
     for (int i=0; i<size; i++){
-      hashArray.set(i,null);
+      hashArray[i]=null;
     }
     size=0;
     // Your solution here.
+  }
+
+
+  public String toString() {
+    String newString="";
+    for (int i=0; i<hashArray.length;i++){
+      if (hashArray[i]==null) {
+        newString += "[" + i + "]\n";
+      }else{
+        SList.SNode currentNode=hashArray[i].head.next;
+        newString+="[" + i + "] ";
+        while(currentNode!=null){
+          newString += "key: |" +((Entry) currentNode.item).key+"| value: |" +((Entry) currentNode.item).value+"| ";
+          currentNode=currentNode.next;
+        }
+        newString+="\n";
+      }
+
+    }
+
+    return newString;
   }
 
 }
