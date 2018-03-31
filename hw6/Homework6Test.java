@@ -46,7 +46,7 @@ public class Homework6Test {
    **/
 
   public static void main(String[] args) {
-    int numBoards=5;
+    int numBoards=10;
 
    if (args.length == 0) {
       numBoards = 5;
