@@ -15,10 +15,11 @@ public class ListSorts {
    **/
   public static LinkedQueue makeQueueOfQueues(LinkedQueue q) {
     // Replace the following line with your solution.
-LinkedQueue queues=new LinkedQueue();
-LinkedQueue tempQueue=new LinkedQueue();
-while (!q.isEmpty()){
+  LinkedQueue queues=new LinkedQueue();
+  LinkedQueue tempQueue=new LinkedQueue();
+  while (!q.isEmpty()){
   try {
+
     tempQueue.enqueue(q.dequeue());
   }catch (QueueEmptyException e){
     System.out.println("empty queue exception");
@@ -26,7 +27,7 @@ while (!q.isEmpty()){
     queues.enqueue(tempQueue);
     tempQueue=new LinkedQueue();
 
-}
+  }
     return queues;
   }
 
@@ -45,9 +46,17 @@ while (!q.isEmpty()){
     // Replace the following line with your solution.
     LinkedQueue newQueue= new LinkedQueue();
     while(!q1.isEmpty() &&!q2.isEmpty()){
+
       try {
+        Comparable temp1=(Comparable) q1.front();
+        Comparable temp2=(Comparable) q2.front();
         //
-        newQueue.enqueue(((Comparable) q1.dequeue()).compareTo(q1.dequeue()) <= 0 ? q1.dequeue():q2.dequeue());
+       if (temp1.compareTo(temp2) <= 0){
+         newQueue.enqueue(q1.dequeue());
+       }else{
+         newQueue.enqueue(q2.dequeue());
+       }
+
       }catch(QueueEmptyException e){
         System.out.println("merge sort queue exception");
       }
@@ -102,10 +111,33 @@ while (!q.isEmpty()){
    **/
   public static void mergeSort(LinkedQueue q) {
     // Your solution here.
-    
-    int div=q.size()/2;
-    LinkedQueue q1=new LinkedQueue();
-    LinkedQueue q2=new LinkedQueue();
+    if (q.size()<2) return;
+
+    LinkedQueue queue=makeQueueOfQueues(q);
+
+
+    while(queue.size()>1) {
+      try {
+        LinkedQueue q1 = (LinkedQueue) queue.dequeue();
+
+        LinkedQueue q2 = (LinkedQueue) queue.dequeue();
+        queue.enqueue(mergeSortedQueues(q1, q2));
+
+      } catch (QueueEmptyException e) {
+        System.out.println("mergeSort exception 1");
+      }
+    }
+
+
+
+    try {
+      q.append((LinkedQueue)queue.dequeue());
+    }catch(QueueEmptyException e){
+      System.out.println("merge exception");
+    }
+
+
+
   }
 
   /**
@@ -114,6 +146,22 @@ while (!q.isEmpty()){
    **/
   public static void quickSort(LinkedQueue q) {
     // Your solution here.
+    if (q.size()<2) return;
+    int n=(int) ((q.size())*Math.random())+1;
+    Comparable pivot=(Comparable) q.nth(n);
+LinkedQueue small=new LinkedQueue();
+LinkedQueue equal=new LinkedQueue();
+LinkedQueue large=new LinkedQueue();
+partition(q,pivot,small,equal,large);
+
+
+
+
+if (small.size()>1) quickSort(small);
+if (large.size()>1) quickSort(large);
+ q.append(small);
+    q.append(equal);
+   q.append(large);
 
   }
 
@@ -137,12 +185,15 @@ while (!q.isEmpty()){
    **/
   public static void main(String [] args) {
 
-    LinkedQueue q = makeRandom(10);
+    LinkedQueue q = makeRandom(20);
+    //LinkedQueue q5 = makeRandom(10);
     System.out.println(q.toString());
+   // System.out.println(q5.toString());
+   // System.out.println(mergeSortedQueues(q,q5).toString());
     mergeSort(q);
     System.out.println(q.toString());
 
-    q = makeRandom(10);
+    q = makeRandom(20);
     System.out.println(q.toString());
     quickSort(q);
     System.out.println(q.toString());
