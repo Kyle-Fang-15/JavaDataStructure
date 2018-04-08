@@ -4,7 +4,7 @@ import list.*;
 
 public class ListSorts {
 
-  private final static int SORTSIZE = 1000;
+  private final static int SORTSIZE = 1000000;
 
   /**
    *  makeQueueOfQueues() makes a queue of queues, each containing one item
@@ -15,20 +15,19 @@ public class ListSorts {
    **/
   public static LinkedQueue makeQueueOfQueues(LinkedQueue q) {
     // Replace the following line with your solution.
-  LinkedQueue queues=new LinkedQueue();
-  LinkedQueue tempQueue=new LinkedQueue();
-  while (!q.isEmpty()){
+LinkedQueue newQueue= new LinkedQueue();
+while(!q.isEmpty()){
+  LinkedQueue temp= new LinkedQueue();
   try {
-
-    tempQueue.enqueue(q.dequeue());
-  }catch (QueueEmptyException e){
-    System.out.println("empty queue exception");
+    temp.enqueue(q.dequeue());
+    newQueue.enqueue(temp);
+  }catch(QueueEmptyException e){
+    System.out.println("makeQueueOfQueues error");
   }
-    queues.enqueue(tempQueue);
-    tempQueue=new LinkedQueue();
+}
 
-  }
-    return queues;
+return newQueue;
+
   }
 
   /**
@@ -44,28 +43,25 @@ public class ListSorts {
    **/
   public static LinkedQueue mergeSortedQueues(LinkedQueue q1, LinkedQueue q2) {
     // Replace the following line with your solution.
-    LinkedQueue newQueue= new LinkedQueue();
-    while(!q1.isEmpty() &&!q2.isEmpty()){
+    LinkedQueue newQueue=new LinkedQueue();
+    while(!q1.isEmpty() && !q2.isEmpty()){
 
       try {
-        Comparable temp1=(Comparable) q1.front();
-        Comparable temp2=(Comparable) q2.front();
-        //
-       if (temp1.compareTo(temp2) <= 0){
-         newQueue.enqueue(q1.dequeue());
-       }else{
-         newQueue.enqueue(q2.dequeue());
-       }
-
+        Comparable temp1 = (Comparable) q1.front();
+        Comparable temp2 = (Comparable) q2.front();
+        newQueue.enqueue(temp1.compareTo(temp2) <= 0 ? q1.dequeue() : q2.dequeue());
       }catch(QueueEmptyException e){
-        System.out.println("merge sort queue exception");
+        System.out.println("mergeSortQueues Exception");
       }
     }
+
     if (!q1.isEmpty())
       newQueue.append(q1);
-    if(!q2.isEmpty())
+    if (!q2.isEmpty())
       newQueue.append(q2);
-    return newQueue;
+
+return newQueue;
+
   }
 
   /**
@@ -85,23 +81,20 @@ public class ListSorts {
                                LinkedQueue qSmall, LinkedQueue qEquals, 
                                LinkedQueue qLarge) {
     // Your solution here.
-    while (!qIn.isEmpty()){
-
+    while(!qIn.isEmpty()) {
       try {
-       Comparable  tempObj = (Comparable) qIn.dequeue();
-        if(tempObj.compareTo(pivot)<0){
-          qSmall.enqueue(tempObj);
-        }else if(tempObj.compareTo(pivot)==0){
-          qEquals.enqueue(tempObj);
-        }else{
-          qLarge.enqueue(tempObj);
+        Comparable temp = (Comparable) qIn.dequeue();
+        if (temp.compareTo(pivot) < 0) {
+          qSmall.enqueue(temp);
+        } else if (temp.compareTo(pivot) == 0) {
+          qEquals.enqueue(temp);
+        } else {
+          qLarge.enqueue(temp);
         }
-      }catch(QueueEmptyException e){
-        System.out.println("partition empty queue exception");
+      } catch (QueueEmptyException e) {
+        System.out.println("partition exception");
       }
-
     }
-
 
   }
 
@@ -111,33 +104,21 @@ public class ListSorts {
    **/
   public static void mergeSort(LinkedQueue q) {
     // Your solution here.
-    if (q.size()<2) return;
+    if(q.size()<2) return;
+LinkedQueue temp=makeQueueOfQueues(q);
+while(temp.size()>1) {
+  try {
+    temp.enqueue(mergeSortedQueues((LinkedQueue) temp.dequeue(), (LinkedQueue) temp.dequeue()));
+  } catch (QueueEmptyException e) {
+    System.out.println("mergeSort Exception 1");
+  }
+}
 
-    LinkedQueue queue=makeQueueOfQueues(q);
-
-
-    while(queue.size()>1) {
-      try {
-        LinkedQueue q1 = (LinkedQueue) queue.dequeue();
-
-        LinkedQueue q2 = (LinkedQueue) queue.dequeue();
-        queue.enqueue(mergeSortedQueues(q1, q2));
-
-      } catch (QueueEmptyException e) {
-        System.out.println("mergeSort exception 1");
-      }
-    }
-
-
-
-    try {
-      q.append((LinkedQueue)queue.dequeue());
-    }catch(QueueEmptyException e){
-      System.out.println("merge exception");
-    }
-
-
-
+try {
+  q.append((LinkedQueue) temp.dequeue());
+} catch(QueueEmptyException e){
+  System.out.println("mergeSort Exception 2");
+}
   }
 
   /**
@@ -146,22 +127,23 @@ public class ListSorts {
    **/
   public static void quickSort(LinkedQueue q) {
     // Your solution here.
-    if (q.size()<2) return;
-    int n=(int) ((q.size())*Math.random())+1;
-    Comparable pivot=(Comparable) q.nth(n);
-LinkedQueue small=new LinkedQueue();
-LinkedQueue equal=new LinkedQueue();
-LinkedQueue large=new LinkedQueue();
-partition(q,pivot,small,equal,large);
+
+    if(q.size()<2) return;
+
+    Comparable item= (Comparable) q.nth((int) Math.random()*q.size()+1);
+    LinkedQueue small=new LinkedQueue();
+    LinkedQueue equal=new LinkedQueue();
+    LinkedQueue large=new LinkedQueue();
+
+    partition(q, item, small, equal, large);
 
 
+    quickSort(small);
+    quickSort(large);
 
-
-if (small.size()>1) quickSort(small);
-if (large.size()>1) quickSort(large);
- q.append(small);
-    q.append(equal);
-   q.append(large);
+q.append(small);
+q.append(equal);
+q.append(large);
 
   }
 
@@ -185,20 +167,22 @@ if (large.size()>1) quickSort(large);
    **/
   public static void main(String [] args) {
 
-    LinkedQueue q = makeRandom(20);
+    LinkedQueue q = makeRandom(15);
+
     //LinkedQueue q5 = makeRandom(10);
     System.out.println(q.toString());
+    //System.out.println(mergeSortedQueues(q,q5).toString());
    // System.out.println(q5.toString());
    // System.out.println(mergeSortedQueues(q,q5).toString());
     mergeSort(q);
     System.out.println(q.toString());
 
-    q = makeRandom(20);
+    q = makeRandom(15);
     System.out.println(q.toString());
     quickSort(q);
     System.out.println(q.toString());
 
-    /* Remove these comments for Part III.
+    //Remove these comments for Part III.
     Timer stopWatch = new Timer();
     q = makeRandom(SORTSIZE);
     stopWatch.start();
@@ -214,7 +198,7 @@ if (large.size()>1) quickSort(large);
     stopWatch.stop();
     System.out.println("Quicksort time, " + SORTSIZE + " Integers:  " +
                        stopWatch.elapsed() + " msec.");
-    */
+
   }
 
 }
