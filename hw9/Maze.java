@@ -338,8 +338,8 @@ public class Maze {
    * the maze, and runs the diagnostic method to see if the maze is good.
    */
   public static void main(String[] args) {
-    int x = 39;
-    int y = 15;
+    int x = 1;
+    int y = 0;
 
     /**
      *  Read the input parameters.
@@ -348,6 +348,7 @@ public class Maze {
     if (args.length > 0) {
       try {
         x = Integer.parseInt(args[0]);
+        
       }
       catch (NumberFormatException e) {
         System.out.println("First argument to Simulation is not an number.");
