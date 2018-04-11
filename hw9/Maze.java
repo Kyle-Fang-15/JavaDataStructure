@@ -348,12 +348,15 @@ public class Maze {
     if (args.length > 0) {
       try {
         x = Integer.parseInt(args[0]);
-        
+
       }
       catch (NumberFormatException e) {
         System.out.println("First argument to Simulation is not an number.");
       }
+
     }
+
+    
 
     if (args.length > 1) {
       try {

@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/GRADER" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/Homework6Test.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/ListSorts.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/Maze.class" afterPath="$PROJECT_DIR$/out/production/CS61B homework/Maze.class" />
       <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/Set.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/SimpleBoard.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/Timer.class" afterPath="" />
@@ -58,8 +57,8 @@
       <file leaf-file-name="Maze.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hw9/Maze.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="350" column="8" lean-forward="false" selection-start-line="350" selection-start-column="8" selection-end-line="350" selection-end-column="8" />
+            <state relative-caret-position="269">
+              <caret line="358" column="4" lean-forward="false" selection-start-line="358" selection-start-column="4" selection-end-line="358" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -165,8 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,6 +233,8 @@
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,12 +324,13 @@
       <workItem from="1522844184353" duration="341000" />
       <workItem from="1523157859749" duration="13006000" />
       <workItem from="1523206953629" duration="20089000" />
-      <workItem from="1523325799632" duration="398000" />
+      <workItem from="1523325799632" duration="558000" />
+      <workItem from="1523422005442" duration="23000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107328000" />
+    <option name="totallyTimeSpent" value="107511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="181" y="38" width="1297" height="747" extended-state="0" />
@@ -709,8 +709,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hw9/Maze.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="350" column="8" lean-forward="false" selection-start-line="350" selection-start-column="8" selection-end-line="350" selection-end-column="8" />
+        <state relative-caret-position="269">
+          <caret line="358" column="4" lean-forward="false" selection-start-line="358" selection-start-column="4" selection-end-line="358" selection-end-column="4" />
           <folding />
         </state>
       </provider>
