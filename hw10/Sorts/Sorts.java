@@ -27,13 +27,44 @@ public class Sorts {
    *    Note:  Return a _newly_ created array.  DO NOT CHANGE THE ARRAY keys.
    **/
   public static int[] countingSort(int[] keys, int whichDigit) {
-    // Replace the following line with your solution.
 
+//another method without using linkdedlist
+
+    int[] countArray=new int[16];
+    int[] temp=new int[keys.length];
+
+    for (int i=0; i<keys.length; i++){
+      int sortDigit=(keys[i]>>(4*whichDigit)) & 15;
+      countArray[sortDigit]++;
+    }
+
+    int total=0;
+    int single=0;
+    for (int i=0; i<countArray.length; i++){
+      single=countArray[i];
+      countArray[i]=total;
+      total+=single;
+
+    }
+
+    for (int i=0; i<keys.length; i++){
+      int sortDigit=(keys[i]>>(4*whichDigit)) & 15;
+      temp[countArray[sortDigit]]=keys[i];
+      countArray[sortDigit]++;
+
+    }
+
+
+
+    // Replace the following line with your solution.
+/*
     int len=keys.length;
     LinkedList[] countArray=new LinkedList[16];
 //get the digit
 //temp array to store the digit;
     int[] temp=new int[len];
+
+
 
     for (int i=0; i<len; i++){
      int theDigitValue=(keys[i]>>(whichDigit*4)) & 15;
@@ -52,6 +83,7 @@ public class Sorts {
       }
 
     }
+    */
 
 
 
@@ -97,6 +129,8 @@ for (int i=0; i<8; i++){
   public static void main(String[] args) {
     int[] keys = { Integer.parseInt("60013879", 16),
                    Integer.parseInt("11111119", 16),
+            Integer.parseInt("11111119", 16),
+            Integer.parseInt("11111119", 16),
                    Integer.parseInt("2c735010", 16),
                    Integer.parseInt("2c732010", 16),
                    Integer.parseInt("7fffffff", 16),
@@ -107,6 +141,8 @@ for (int i=0; i<8; i++){
                    Integer.parseInt("28905879", 16),
                    Integer.parseInt("00011119", 16),
                    Integer.parseInt("00000000", 16),
+            Integer.parseInt("00000000", 16),
+            Integer.parseInt("00000000", 16),
                    Integer.parseInt("7c725010", 16),
                    Integer.parseInt("1e630010", 16),
                    Integer.parseInt("111111e5", 16),
