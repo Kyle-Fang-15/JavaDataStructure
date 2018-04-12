@@ -356,7 +356,7 @@ public class Maze {
 
     }
 
-    
+
 
     if (args.length > 1) {
       try {
