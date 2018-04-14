@@ -4,6 +4,7 @@
     <list default="true" id="d7cc668f-136e-443e-84a5-ca806cae1d3f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CS61B homework.iml" afterPath="$PROJECT_DIR$/CS61B homework.iml" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/Fraction.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/GRADER" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/Homework6Test.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/CS61B homework/ListSorts.class" afterPath="" />
@@ -60,7 +61,7 @@
       <file leaf-file-name="Maze.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw9/Maze.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5175">
+            <state relative-caret-position="0">
               <caret line="346" column="0" lean-forward="false" selection-start-line="346" selection-start-column="0" selection-end-line="346" selection-end-column="0" />
               <folding />
             </state>
@@ -92,8 +93,8 @@
       <file leaf-file-name="WUGTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pj3/WUGTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
                 <element signature="e#0#28468#0" expanded="true" />
               </folding>
@@ -101,19 +102,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fraction.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab2/Fraction.java">
+      <file leaf-file-name="BankApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab6/BankApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+            <state relative-caret-position="451">
+              <caret line="80" column="26" lean-forward="false" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab6/AccountData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-723">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VirtualTeller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab6/VirtualTeller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="58" column="71" lean-forward="false" selection-start-line="58" selection-start-column="71" selection-end-line="58" selection-end-column="71" />
               <folding>
-                <element signature="e#868#869#0" expanded="true" />
-                <element signature="e#888#889#0" expanded="true" />
-                <element signature="e#951#952#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1053#1054#0" expanded="true" />
-                <element signature="e#1108#1109#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BadTransactionException.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lab6/BadTransactionException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BadAccountException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab6/BadAccountException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exception.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Exception.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,6 +219,9 @@
         <option value="$PROJECT_DIR$/hw10/Sorts/Sorts.java" />
         <option value="$PROJECT_DIR$/pj3/graph/WUGraph.java" />
         <option value="$PROJECT_DIR$/lab2/Fraction.java" />
+        <option value="$PROJECT_DIR$/lab6/BadTransactionException.java" />
+        <option value="$PROJECT_DIR$/lab6/VirtualTeller.java" />
+        <option value="$PROJECT_DIR$/lab6/BankApp.java" />
       </list>
     </option>
   </component>
@@ -182,8 +232,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="25" />
-    <option name="y" value="23" />
+    <option name="x" value="266" />
+    <option name="y" value="36" />
     <option name="width" value="1297" />
     <option name="height" value="747" />
   </component>
@@ -214,45 +264,13 @@
             <path>
               <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaDataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="hw5" type="462c0819:PsiDirectoryNode" />
+              <item name="lab6" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaDataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="hw5" type="462c0819:PsiDirectoryNode" />
-              <item name="list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaDataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="hw6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaDataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="hw6" type="462c0819:PsiDirectoryNode" />
-              <item name="dict" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaDataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="hw10" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaDataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="lab2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaDataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="pj3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaDataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaDataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="pj3" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="lab6" type="462c0819:PsiDirectoryNode" />
+              <item name="sortedlist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -284,7 +302,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Fraction" />
+      <option name="MAIN_CLASS_NAME" value="BankApp" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/hw5" />
@@ -355,16 +373,15 @@
       <workItem from="1523422005442" duration="499000" />
       <workItem from="1523500510462" duration="9661000" />
       <workItem from="1523585583497" duration="4888000" />
-      <workItem from="1523673081105" duration="76000" />
+      <workItem from="1523673081105" duration="4849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122612000" />
+    <option name="totallyTimeSpent" value="127385000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="25" y="23" width="1297" height="747" extended-state="0" />
-    <editor active="true" />
+    <frame x="266" y="36" width="1297" height="747" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -374,12 +391,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30814815" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30814815" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20894371" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20894371" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -410,48 +427,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/TestHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="142" column="46" lean-forward="false" selection-start-line="142" selection-start-column="46" selection-end-line="142" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="113" column="39" lean-forward="false" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hw3.java" />
     <entry file="file://$PROJECT_DIR$/src/TestHelper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -675,7 +650,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hw9/Maze.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5175">
+        <state relative-caret-position="0">
           <caret line="346" column="0" lean-forward="false" selection-start-line="346" selection-start-column="0" selection-end-line="346" selection-end-column="0" />
           <folding />
         </state>
@@ -734,28 +709,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/Fraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="116" column="30" lean-forward="false" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+          <folding>
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#888#889#0" expanded="false" />
+            <element signature="e#951#952#0" expanded="false" />
+            <element signature="e#969#970#0" expanded="false" />
+            <element signature="e#1053#1054#0" expanded="false" />
+            <element signature="e#1108#1109#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pj3/WUGTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding>
             <element signature="e#0#28468#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/Fraction.java">
+    <entry file="file://$PROJECT_DIR$/lab6/AccountData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+        <state relative-caret-position="-723">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab6/BadAccountException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab6/VirtualTeller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="58" column="71" lean-forward="false" selection-start-line="58" selection-start-column="71" selection-end-line="58" selection-end-column="71" />
           <folding>
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab6/BankApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="80" column="26" lean-forward="false" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab6/BadTransactionException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
