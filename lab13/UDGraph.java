@@ -141,10 +141,11 @@ public class UDGraph
     // Put your answer to Part II here.
     if (length==2)
       return length2Paths();
-    UDGraph preG=length2Paths();
+    //UDGraph preG=length2Paths();
 
-    while(length>2) {
+    //while(length>2) {
       UDGraph newGraph = new UDGraph(vertices);
+      UDGraph preG=paths(length-1);
       for (int i = 0; i < vertices; i++) {
         for (int j = 0; j < vertices; j++) {
           if (preG.hasEdge(i, j)) {
@@ -155,11 +156,12 @@ public class UDGraph
           }
         }
       }
-      length--;
-      preG=newGraph;
-    }
+      return newGraph;
+      //length--;
+      //preG=newGraph;
+    //}
 
-    return preG;
+    //return preG;
   }
 
   /**
